@@ -1,0 +1,19 @@
+.center {
+  margin-top: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: red;
+}
+
+.banner-title {
+  font-weight: 800;
+  font-size: 8rem;
+}
+@media (max-width: 780px) {
+  .banner-title {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}

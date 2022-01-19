@@ -39,7 +39,7 @@ const AddProduct = () => {
     onSubmit: async (values) => {
       try {
         console.log(values);
-        await axios.post('http://localhost:3003/addproduct', values);
+        await axios.post('https://rental-app-backend.herokuapp.com/addproduct', values);
         navigate('/allproducts');
       } catch (error) {
         console.log('error in add products');

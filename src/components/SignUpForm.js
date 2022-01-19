@@ -45,7 +45,7 @@ const SignUpForm = () => {
     validate,
     onSubmit: async (values) => {
       try {
-        let data = await axios.post('http://localhost:3003/signup', values);
+        let data = await axios.post('https://rental-app-backend.herokuapp.com//signup', values);
         setErrorMessage(data.data.message);
       } catch (error) {
         console.log('error in signup post');

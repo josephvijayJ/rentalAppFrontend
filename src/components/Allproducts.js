@@ -6,7 +6,7 @@ const Allproducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(async () => {
-    let data = await axios.get('http://localhost:3003/allproduct');
+    let data = await axios.get('https://rental-app-backend.herokuapp.com/allproduct');
     console.log(data.data);
     setProducts(data.data);
   }, []);
